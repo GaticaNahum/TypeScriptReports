@@ -1,0 +1,3 @@
+npm i express cors body-parser dotenv bcryptjs jsonwebtoken typescript nodemon pg- pg-pool
+
+npm i --save-dev @types/express @types/bcryptjs @types/pg @types/pg-pool @types/jsonwebtoken
