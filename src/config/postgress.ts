@@ -13,4 +13,4 @@ const config: Pool.Config<Client>  = {
 }
 
 
-const pool = new Pool(config);
+export const pool = new Pool(config);
