@@ -6,4 +6,5 @@ export interface IUserRepository {
     save(user: TUser): Promise<boolean>;
     update(user: TUser): Promise<boolean>;
     delete(id: number): Promise<boolean>;
+    login (email: string, password: string): Promise<TUser>;
 }

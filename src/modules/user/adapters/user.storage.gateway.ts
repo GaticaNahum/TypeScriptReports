@@ -21,4 +21,13 @@ export class UserStorageGateway implements IUserRepository{
     delete(id: number): Promise<boolean> {
         throw new Error("Method not implemented.");
     }
+    login(email: string, password: string): Promise<TUser> {
+        const query = `SELECT * FROM users WHERE email = $1`;
+        return new Promise((resolve, reject) => {
+            pool.query(query, [email], (err, res) => {
+                if(err) reject(err);
+                resolve(res.rows[0]);
+            })
+        })
+    }
 }

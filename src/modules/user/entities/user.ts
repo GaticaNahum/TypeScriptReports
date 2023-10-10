@@ -5,5 +5,4 @@ export type TUser = Entity<number> & {
     password? : string;
     status?: TStatus;
     person?: any;
-
 }

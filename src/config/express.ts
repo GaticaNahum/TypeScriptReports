@@ -1,7 +1,7 @@
 import express, {Application} from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import { userRouter } from 'modules/user/adapters/user.controller';
+import { userRouter } from '../modules/user/adapters/user.controller';
 
 const app: Application = express();
 app.use(bodyParser.urlencoded({extended: true}));
